@@ -1,7 +1,7 @@
 import React from "react";
 import WebFol from "../assets/Image/WebFol.png";
-import GDfol from "../assets/Image/GDfol.png";
-import SMfol from "../assets/Image/SMfol.png";
+import GDfol from "../assets/Image/GDFol.png";
+import SMfol from "../assets/Image/SMFol.png";
 import UIfol from "../assets/Image/UXUIFol.png";
 import Spfol from "../assets/Image/SPFol.png";
 import { Link } from "react-router-dom";
@@ -59,7 +59,7 @@ const Projects = () => {
               src={UIfol}
               alt="Project 4"
             />
-          </div>    
+          </div>
           <p className="text-xl text-center mt-5 text-gray-300 transition-colors duration-300 group-hover:text-white font-medium">
             UX/UI Design{" "}
           </p>
