@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  @apply bg-gray-50 text-gray-900 transition-colors duration-300;
+}
+
+/* Light mode specific background */
+html:not(.dark) body {
+  background:
+    radial-gradient(circle at top, rgba(0, 0, 0, 0.03), transparent 24%),
+    linear-gradient(180deg, #f9fafb 0%, #f3f4f6 45%, #f9fafb 100%);
+}
+
+/* Dark mode specific background */
+html.dark body {
+  color-scheme: dark;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.07), transparent 24%),
+    linear-gradient(180deg, #050507 0%, #09090d 45%, #050507 100%);
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 0 0 32px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 24s linear infinite;
+}
