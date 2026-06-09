@@ -1,16 +1,59 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# `< RECH />`
+### Personal Portfolio — Vorng Sovannreach
 
-Currently, two official plugins are available:
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A dark-themed personal portfolio showcasing my work as a full-stack developer based in Phnom Penh, Cambodia.
 
-## React Compiler
+**[🌐 Live Demo](https://your-portfolio-url.com)** · **[📬 Contact Me](mailto:your@email.com)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- 🌙 **Dark / Light mode** — Tailwind `darkMode: 'class'` strategy
+- 🪟 **Glassmorphism UI** — frosted-glass cards and dashboard panels
+- 🖥️ **macOS-style components** — folder frame, sticky header, animated sections
+- ⚡ **Vite + React** — blazing-fast dev & build performance
+- 📱 **Fully responsive** — mobile-first layout
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technologies |
+|-------|-------------|
+| **Frontend** | React, Vite, Tailwind CSS |
+| **Design** | Figma, Adobe XD, Adobe Creative Suite |
+| **Backend** | Node.js, Laravel, Django, FastAPI, Express, .NET |
+| **Databases** | MySQL, PostgreSQL, MongoDB, SQLite, Supabase, Firebase |
+| **Mobile** | Flutter |
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/vongsovannreach681-crypto/MyPortfolio.git
+cd MyPortfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+---
+
+## 📁 Project Structure
