@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import CodeAcademyImage from "../assets/Image/CodeA.png";
 import StoreManagementImage from "../assets/Image/Store.png";
-import ECommerceImage from "../assets/Image/ECommerce.png";
+import ECommerceImage from "../assets/Image/Ecommerce.png";
 const webProjects = [
   {
     title: "Code Academy",
