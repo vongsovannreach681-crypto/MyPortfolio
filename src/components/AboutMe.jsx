@@ -4,7 +4,7 @@ import Avar from "../assets/Av2.png";
 const AboutMe = () => {
   return (
     <section className="px-6 py-10">
-      <h2 className="text-3xl font-bold text-left mb-8 border-b-4 border-white w-fit pb-2 text-[#f5f5f5]">
+      <h2 className="text-3xl font-bold text-left mb-8 border-b-4 border-slate-900 w-fit pb-2 text-slate-950 dark:border-white dark:text-white">
         Something About Me
       </h2>
 
@@ -12,7 +12,7 @@ const AboutMe = () => {
         <div className="flex-1 flex justify-center">
           <div className="relative max-w-md">
             {/* Background blobs */}
-            
+
             <img
               src={Avar}
               alt="Avar"
@@ -23,8 +23,8 @@ const AboutMe = () => {
 
         <div className="flex-1">
           <div className="max-w-xl rounded-[2rem] border border-white/15 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-8 shadow-2xl backdrop-blur-xl">
-            <div className="bg-white/20 w-full h-12 px-3 py-2 rounded-md mb-6 flex items-center justify-between">
-              <span className="text-sm  font-semibold text-[#f5f5f5]">
+            <div className="bg-slate-100/75 w-full h-12 px-3 py-2 rounded-md mb-6 flex items-center justify-between dark:bg-white/10">
+              <span className="text-sm font-semibold text-slate-900 dark:text-white">
                 Message From Reach...
               </span>
 
@@ -35,7 +35,7 @@ const AboutMe = () => {
               </div>
             </div>
 
-            <p className="text-base leading-8 text-slate-200">
+            <p className="text-base leading-8 text-slate-700 dark:text-white/90">
               Ready to see what I’ve been working on? Scroll down to explore my
               latest projects, or click the button below to dive straight into
               my work!

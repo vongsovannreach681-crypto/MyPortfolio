@@ -8,14 +8,14 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <main className="min-h-screen overflow-x-hidden px-[70px] pb-8 text-white max-lg:px-10 max-md:px-5">
+      <main className="min-h-screen overflow-x-hidden px-[70px] pb-8 text-gray-900 dark:text-white max-lg:px-10 max-md:px-5">
         <Header className="w-[60%] position-fixed" />
         <HeroSection />
       </main>
       <AutoSlide />
       <AboutMe />
-      <Projects/>
-      <Footer/>
+      <Projects />
+      <Footer />
     </>
   );
 }

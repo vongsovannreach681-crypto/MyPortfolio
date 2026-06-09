@@ -8,72 +8,73 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <section id="projects" className="px-6 py-10">
-      <h2 className="text-3xl font-bold text-left mb-8 border-b-4 border-white w-fit pb-2 text-[#f5f5f5]">
+      <h2 className="text-3xl font-bold text-left mb-8 border-b-4 border-[#0f1f4f] w-fit pb-2 text-[#0f1f4f] dark:border-white dark:text-white">
         View My Projects
       </h2>
 
-      {/* project Display */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden  shadow-lg transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-white/10 border border-transparent group-hover:border-white/10">
-            <img
-              className="w-[450px] h-auto transition-transform duration-500 group-hover:scale-105"
-              src={WebFol}
-              alt="Project 1"
-            />
+          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
+            <Link to="/webProjects" className="w-full h-full block">
+              <img
+                className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
+                src={WebFol}
+                alt="Project 1"
+              />
+            </Link>
           </div>
-          <p className="text-xl text-center mt-5 text-gray-300 transition-colors duration-300 group-hover:text-white font-medium">
-            Web Development{" "}
+          <p className="text-xl text-center mt-5 text-slate-700 transition-colors duration-300 group-hover:text-slate-900 dark:text-white/80 dark:group-hover:text-white font-medium">
+            Web Development
           </p>
         </div>
         <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden  shadow-lg transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-white/10 border border-transparent group-hover:border-white/10">
+          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
             <Link to="/GDProjects" className="w-full h-full block">
               <img
-                className="w-[450px] h-auto transition-transform duration-500 group-hover:scale-105"
+                className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
                 src={GDfol}
                 alt="Project 2"
               />
             </Link>
           </div>
-          <p className="text-xl text-center mt-5 text-gray-300 transition-colors duration-300 group-hover:text-white font-medium">
-            Graphic Design{" "}
+          <p className="text-xl text-center mt-5 text-slate-700 transition-colors duration-300 group-hover:text-slate-900 dark:text-white/80 dark:group-hover:text-white font-medium">
+            Graphic Design
           </p>
         </div>
         <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden  shadow-lg transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-white/10 border border-transparent group-hover:border-white/10">
+          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
             <img
-              className="w-[450px] h-auto transition-transform duration-500 group-hover:scale-105"
+              className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
               src={SMfol}
               alt="Project 3"
             />
           </div>
-          <p className="text-xl text-center mt-5 text-gray-300 transition-colors duration-300 group-hover:text-white font-medium">
-            Studio Multi Media{" "}
+          <p className="text-xl text-center mt-5 text-slate-700 transition-colors duration-300 group-hover:text-slate-900 dark:text-white/80 dark:group-hover:text-white font-medium">
+            Studio Multi Media
           </p>
         </div>
         <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden  shadow-lg transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-white/10 border border-transparent group-hover:border-white/10">
+          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
             <img
-              className="w-[450px] h-auto transition-transform duration-500 group-hover:scale-105"
+              className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
               src={UIfol}
               alt="Project 4"
             />
           </div>
-          <p className="text-xl text-center mt-5 text-gray-300 transition-colors duration-300 group-hover:text-white font-medium">
-            UX/UI Design{" "}
+          <p className="text-xl text-center mt-5 text-slate-700 transition-colors duration-300 group-hover:text-slate-900 dark:text-white/80 dark:group-hover:text-white font-medium">
+            UX/UI Design
           </p>
         </div>
         <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden  shadow-lg transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-white/10 border border-transparent group-hover:border-white/10">
+          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
             <img
-              className="w-[450px] h-auto transition-transform duration-500 group-hover:scale-105"
+              className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
               src={Spfol}
               alt="Project 5"
             />
           </div>
-          <p className="text-xl text-center mt-5 text-gray-300 transition-colors duration-300 group-hover:text-white font-medium">
-            Studio Photography{" "}
+          <p className="text-xl text-center mt-5 text-slate-700 transition-colors duration-300 group-hover:text-slate-900 dark:text-white/80 dark:group-hover:text-white font-medium">
+            Studio Photography
           </p>
         </div>
       </div>

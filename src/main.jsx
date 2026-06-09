@@ -6,6 +6,7 @@ import App from './App.jsx'
 import Achivement from './pages/Achivement.jsx'
 import ProjectsDisplay from './pages/ProjectsDisplay.jsx'
 import GDProjects from './pages/GDProjects.jsx'
+import WebPage from './pages/WebPage.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,6 +23,9 @@ const router = createBrowserRouter([
   {
     path:"/GDProjects",
     element: <GDProjects />
+  },{
+    path:"/webProjects",
+    element: <WebPage />
   }
 ]);
 
