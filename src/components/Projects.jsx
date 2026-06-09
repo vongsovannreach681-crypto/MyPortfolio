@@ -14,10 +14,10 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden  shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
+          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
             <Link to="/webProjects" className="w-full h-full block">
               <img
-                className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105"
+                className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
                 src={WebFol}
                 alt="Project 1"
               />
@@ -28,10 +28,10 @@ const Projects = () => {
           </p>
         </div>
         <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden  shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
+          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
             <Link to="/GDProjects" className="w-full h-full block">
               <img
-                className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105"
+                className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
                 src={GDfol}
                 alt="Project 2"
               />
@@ -42,9 +42,9 @@ const Projects = () => {
           </p>
         </div>
         <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden  shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
+          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
             <img
-              className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105"
+              className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
               src={SMfol}
               alt="Project 3"
             />
@@ -54,9 +54,9 @@ const Projects = () => {
           </p>
         </div>
         <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden  shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
+          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
             <img
-              className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 "
+              className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
               src={UIfol}
               alt="Project 4"
             />
@@ -66,9 +66,9 @@ const Projects = () => {
           </p>
         </div>
         <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden  shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
+          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
             <img
-              className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 "
+              className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
               src={Spfol}
               alt="Project 5"
             />
