@@ -48,8 +48,8 @@ function Header() {
           className="inline-flex items-center gap-2 justify-self-start text-[1.1rem] font-bold tracking-[0.02em] text-[#0f1f4f] dark:text-[#f5f5f5]"
           aria-label="RECH home"
         >
-          <span>{"<"} RECH</span>
-          <span className="-translate-y-px text-[#f5c542]">/&gt;</span>
+          <span >{"<"} RECH</span>
+          <span className="-translate-y-px ">/&gt;</span>
         </Link>
 
         {/* Desktop Navigation */}
