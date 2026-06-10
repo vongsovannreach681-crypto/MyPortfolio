@@ -6,6 +6,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import CodeAcademyImage from "../assets/Image/CodeA.png";
 import StoreManagementImage from "../assets/Image/Store.png";
 import ECommerceImage from "../assets/Image/Ecommerce.png";
+import MathExerciseImage from "../assets/Image/Math.png";
 const webProjects = [
   {
     title: "Code Academy",
@@ -14,13 +15,20 @@ const webProjects = [
     image: CodeAcademyImage,
   },
   {
-    title: "Store Management",
+    title: "Store Management ( Laptop Only )",
     url: "https://sw24-final-setec.vercel.app/",
     description:
       "A web application for efficient store and inventory management.",
     image: StoreManagementImage,
   },
   {
+    title: "Math Khmer Exercise",
+    url: "https://v0-khmer-math-exercise.vercel.app/",
+    description:
+      "An interactive platform for practicing math exercises in Khmer.",
+    image: MathExerciseImage, // Replace with actual image if available
+  },
+   {
     title: "E-commerce Platform",
     url: "https://food-e-commers.vercel.app",
     description:

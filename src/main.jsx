@@ -7,6 +7,7 @@ import Achivement from './pages/Achivement.jsx'
 import ProjectsDisplay from './pages/ProjectsDisplay.jsx'
 import GDProjects from './pages/GDProjects.jsx'
 import WebPage from './pages/WebPage.jsx'
+import UxUiPage from './pages/UXUIPage.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +27,9 @@ const router = createBrowserRouter([
   },{
     path:"/webProjects",
     element: <WebPage />
+  },{
+    path:"/uxuiProjects",
+    element: <UxUiPage />
   }
 ]);
 
