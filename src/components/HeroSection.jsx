@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Reach from "../assets/Reach.png";
 import { motion } from "framer-motion";
-
+import CV from "../assets/PDF/CV.pdf"
 const StarBackground = () => {
   const [stars] = useState(() =>
     Array.from({ length: 80 }).map(() => ({
@@ -100,7 +100,7 @@ function HeroSection() {
             // DARK MODE: Translucent frosted white outline button
             className="inline-flex w-fit items-center rounded-xl border border-slate-300 bg-slate-50/50 px-6 py-3.5 text-lg font-medium text-slate-800 shadow-sm dark:border-white/28 dark:bg-white/5 dark:text-white transition duration-150"
           >
-            About Me
+            <a href={CV} download={CV}>Download CV</a>
           </motion.a>
         </motion.div>
 
