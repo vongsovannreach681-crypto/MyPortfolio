@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const getInitialTheme = () => {
-    if (typeof window === "undefined") return false;
+    if (typeof window === "undefined") return true;
     const saved = localStorage.getItem("theme");
     if (saved) return saved === "dark";
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return true; // Default to dark mode if no preference is saved
   };
 
   const [isDarkMode, setIsDarkMode] = useState(getInitialTheme);
