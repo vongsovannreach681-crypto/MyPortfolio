@@ -23,22 +23,6 @@ function Header() {
     }
   }, [isDarkMode]);
 
-  // Reusable Dark Mode Button Component
-  const ThemeToggle = () => (
-    <button
-      type="button"
-      onClick={() => setIsDarkMode((current) => !current)}
-      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/5 dark:border-white/10 bg-black/5 dark:bg-white/10 text-gray-700 dark:text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] transition duration-150 hover:-translate-y-px hover:bg-black/10 dark:hover:bg-white/18"
-      aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
-    >
-      {isDarkMode ? (
-        <FiSun className="text-[1.05rem]" aria-hidden="true" />
-      ) : (
-        <FiMoon className="text-[1.05rem]" aria-hidden="true" />
-      )}
-    </button>
-  );
-
   return (
     <header className="fixed top-[30px] left-1/2 -translate-x-1/2 w-[60%] max-[1024px]:w-[85%] max-[640px]:w-[92%] z-50 rounded-full border border-black/10 dark:border-white/20 bg-[linear-gradient(180deg,rgba(255,255,255,0.88),rgba(240,240,245,0.96))] dark:bg-[linear-gradient(180deg,rgba(32,32,36,0.88),rgba(18,18,22,0.96))] px-5 py-3 shadow-[0_16px_34px_rgba(0,0,0,0.1)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_16px_34px_rgba(0,0,0,0.45)] backdrop-blur-[18px] max-[640px]:top-[18px] max-[640px]:rounded-[26px]">
       <div className="grid w-full grid-cols-[1fr_auto_1fr] items-center gap-4 max-[900px]:flex max-[900px]:justify-between">
@@ -48,7 +32,7 @@ function Header() {
           className="inline-flex items-center gap-2 justify-self-start text-[1.1rem] font-bold tracking-[0.02em] text-[#0f1f4f] dark:text-[#f5f5f5]"
           aria-label="RECH home"
         >
-          <span >{"<"} RECH</span>
+          <span>{"<"} RECH</span>
           <span className="-translate-y-px ">/&gt;</span>
         </Link>
 
@@ -79,9 +63,21 @@ function Header() {
 
         {/* Desktop Actions */}
         <div className="flex items-center justify-end gap-3 justify-self-end max-[900px]:hidden">
-          <ThemeToggle />
+          <button
+            type="button"
+            onClick={() => setIsDarkMode((current) => !current)}
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/5 dark:border-white/10 bg-black/5 dark:bg-white/10 text-gray-700 dark:text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] transition duration-150 hover:-translate-y-px hover:bg-black/10 dark:hover:bg-white/18"
+            aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {isDarkMode ? (
+              <FiSun className="text-[1.05rem]" aria-hidden="true" />
+            ) : (
+              <FiMoon className="text-[1.05rem]" aria-hidden="true" />
+            )}
+          </button>
+
           <a
-            href="#contact"
+            href="/#contact-form"
             className="inline-flex items-center gap-2 rounded-full bg-[#0f1f4f] px-4 py-[11px] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] transition duration-150 hover:-translate-y-px hover:bg-[#0b1738] dark:bg-white/15 dark:text-black dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] dark:hover:bg-white/20"
           >
             <span className="font-medium text-white">Contact</span>
@@ -90,7 +86,18 @@ function Header() {
 
         {/* Mobile Actions */}
         <div className="hidden items-center justify-end gap-3 max-[900px]:flex">
-          <ThemeToggle />
+          <button
+            type="button"
+            onClick={() => setIsDarkMode((current) => !current)}
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/5 dark:border-white/10 bg-black/5 dark:bg-white/10 text-gray-700 dark:text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] transition duration-150 hover:-translate-y-px hover:bg-black/10 dark:hover:bg-white/18"
+            aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {isDarkMode ? (
+              <FiSun className="text-[1.05rem]" aria-hidden="true" />
+            ) : (
+              <FiMoon className="text-[1.05rem]" aria-hidden="true" />
+            )}
+          </button>
           <button
             type="button"
             onClick={() => setIsMenuOpen((current) => !current)}
@@ -139,9 +146,10 @@ function Header() {
             >
               Achievements
             </Link>
+
             <a
               className="inline-flex w-fit items-center gap-2 rounded-full bg-[#0f1f4f] px-4 py-3 text-white transition duration-150 hover:bg-[#0b1738] dark:bg-white/15 dark:text-black dark:hover:bg-white/20"
-              href="#contact"
+              href="/#contact-form"
               onClick={() => setIsMenuOpen(false)}
             >
               <span>Contact</span>

@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Projects from "./components/Projects";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AutoSlide />
       <AboutMe />
       <Projects />
+      <ContactForm />
       <Footer />
     </>
   );

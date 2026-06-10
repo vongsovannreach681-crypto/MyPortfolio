@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowRight } from "react-icons/fa";
+import { FaGithub, FaTelegram, FaEnvelope, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -30,12 +30,12 @@ const Footer = () => {
             say hi, my inbox is open!
           </p>
           <motion.a
-            href="mailto:sovannreach@example.com"
+            href="mailto:songsovannreach681@gmail.com"
             whileHover={{ y: -4, backgroundColor: "rgba(15,23,42,0.08)" }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-3 px-6 py-4 rounded-lg border border-[#0f1f4f]/15 bg-[#0f1f4f] text-white font-medium transition duration-150 mt-4 hover:bg-[#081433] dark:border-white/20 dark:bg-white/10 dark:text-white dark:hover:bg-white/15"
+            className="inline-flex text-white items-center gap-3 px-6 py-4 rounded-lg border border-[#0f1f4f]/15 bg-[#0f1f4f] text-white font-medium transition duration-150 mt-4 hover:bg-[#081433] dark:border-white/20 dark:bg-white/10 dark:text-white dark:hover:bg-white/15"
           >
-            Say Hello <FaArrowRight />
+            <span className="text-white">Say Hello</span>
           </motion.a>
         </motion.div>
 
@@ -55,16 +55,16 @@ const Footer = () => {
 
           <div className="flex gap-8">
             {[
-              { icon: FaGithub, href: "https://github.com/", label: "GitHub" },
+              { icon: FaGithub, href: "https://github.com/vongsovannreach681-crypto", label: "GitHub" },
               {
-                icon: FaLinkedin,
-                href: "https://linkedin.com/",
-                label: "LinkedIn",
+                icon: FaTelegram,
+                href: "https://t.me/VORNG_SOVANNREACH",
+                label: "Telegram",
               },
               {
-                icon: FaTwitter,
-                href: "https://twitter.com/",
-                label: "Twitter",
+                icon: FaEnvelope,
+                href: "mailto:songsovannreach681@gmail.com",
+                label: "Email",
               },
             ].map((social, idx) => (
               <motion.a

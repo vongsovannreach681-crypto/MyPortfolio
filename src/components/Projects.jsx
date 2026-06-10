@@ -43,18 +43,6 @@ const Projects = () => {
         </div>
         <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
           <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
-            <img
-              className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
-              src={SMfol}
-              alt="Project 3"
-            />
-          </div>
-          <p className="text-xl text-center mt-5 text-slate-700 transition-colors duration-300 group-hover:text-slate-900 dark:text-white/80 dark:group-hover:text-white font-medium">
-            Studio Multi Media
-          </p>
-        </div>
-        <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
             <Link to="/uxuiProjects" className="w-full h-full block">
               <img
                 className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
@@ -67,18 +55,7 @@ const Projects = () => {
             UX/UI Design
           </p>
         </div>
-        <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:-translate-y-3">
-          <div className="overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-2xl dark:bg-white/[0.02] dark:border-white/8">
-            <img
-              className="w-full max-w-[450px] h-auto mx-auto transition-transform duration-500 group-hover:scale-105 rounded-lg"
-              src={Spfol}
-              alt="Project 5"
-            />
-          </div>
-          <p className="text-xl text-center mt-5 text-slate-700 transition-colors duration-300 group-hover:text-slate-900 dark:text-white/80 dark:group-hover:text-white font-medium">
-            Studio Photography
-          </p>
-        </div>
+        
       </div>
     </section>
   );
